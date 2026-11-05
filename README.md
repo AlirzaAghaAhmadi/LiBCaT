@@ -351,3 +351,10 @@ temporary build isolation. First verify `python -m pip show setuptools wheel`,
 then retry `python -m pip install --no-build-isolation -e ".[dev,web]"`.
 This is a network/build-environment workaround, not a fix for missing runtime
 dependencies.
+
+## Contributors
+
+This project was developed collaboratively by:
+
+- [Alireza Aghaahmadi](https://github.com/AlirzaAghaAhmadi)
+- [Soheil Sardari] (https://github.com/TripleS-PM)
