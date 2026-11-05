@@ -1,0 +1,10 @@
+<topics>
+  <topic number="1" template="Metastatic breast cancer">
+    <field name="disease">Stage IV breast cancer</field>
+    <field name="her2">HER2 positive</field>
+  </topic>
+  <topic number="2" template="Triple negative breast cancer">
+    <field name="disease">Metastatic triple negative breast cancer</field>
+    <field name="er">ER negative</field>
+  </topic>
+</topics>

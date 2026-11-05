@@ -1,0 +1,45 @@
+# Environments / credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# Python build / caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.retrieval_cache/
+.cache/
+
+# Downloaded datasets and generated metrics (keep only tracked synthetic fixtures)
+/data/*
+!/data/sample/
+!/data/sample/**
+/results/
+*.part
+*.log
+
+# Large or local assets
+*.deb
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.parquet
+*.zip
+*.tar
+*.tar.gz
+.DS_Store
+.idea/
+.vscode/

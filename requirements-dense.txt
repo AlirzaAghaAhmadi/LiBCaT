@@ -1,0 +1,2 @@
+# Optional large local model dependencies (downloads occur on first model load).
+-e ".[all]"

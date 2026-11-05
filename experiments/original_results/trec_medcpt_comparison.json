@@ -1,0 +1,35 @@
+{
+  "v4_base": {
+    "variant": "v4_base",
+    "candidate_trials": 12249,
+    "breast_topics": 5,
+    "nDCG@10": 0.3358783918906505,
+    "EligibleHit@5": 0.6,
+    "EligibleP@10": 0.2,
+    "EligibleRecall@10": 0.005396415944361372,
+    "EligibleMRR": 0.5273504273504274,
+    "EligibleQrelCoverage": 0.968235557358551
+  },
+  "medcpt_only": {
+    "variant": "medcpt_only",
+    "candidate_trials": 12249,
+    "breast_topics": 5,
+    "nDCG@10": 0.33474726122673404,
+    "EligibleHit@5": 0.8,
+    "EligibleP@10": 0.2,
+    "EligibleRecall@10": 0.005396415944361372,
+    "EligibleMRR": 0.5051282051282051,
+    "EligibleQrelCoverage": 0.968235557358551
+  },
+  "v4_medcpt_fusion": {
+    "variant": "v4_medcpt_fusion",
+    "candidate_trials": 12249,
+    "breast_topics": 5,
+    "nDCG@10": 0.35474092222046405,
+    "EligibleHit@5": 0.6,
+    "EligibleP@10": 0.2,
+    "EligibleRecall@10": 0.005396415944361372,
+    "EligibleMRR": 0.5273504273504274,
+    "EligibleQrelCoverage": 0.968235557358551
+  }
+}

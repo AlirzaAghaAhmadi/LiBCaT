@@ -1,0 +1,30 @@
+name: Python CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lightweight-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install package
+        run: python -m pip install -e ".[dev]"
+      - name: Compile Python sources
+        run: python -m compileall -q libcat scripts tests app.py
+      - name: Run unit tests
+        run: python -m pytest -q
+      - name: Offline smoke test
+        run: python scripts/smoke_test.py
+      - name: Programmatic usage example
+        run: python examples/custom_corpus.py
+      - name: Synthetic TREC evaluation integration test
+        run: python scripts/run_trec_eval.py --mode lexical --trials tests/fixtures/mini_trials.csv --topics tests/fixtures/mini_topics.xml --qrels tests/fixtures/mini_qrels.txt --output-dir results/ci

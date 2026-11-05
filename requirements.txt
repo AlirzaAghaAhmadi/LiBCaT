@@ -1,0 +1,2 @@
+# Lightweight setup for the app + lexical retrieval, without neural model downloads.
+-e ".[web]"

@@ -1,0 +1,12 @@
+{
+  "retrieval_mode_requested": "hybrid",
+  "retrieval_mode_active": "hybrid",
+  "candidate_trials": 12249,
+  "breast_topics": 5,
+  "nDCG@10": 0.3358783918906505,
+  "EligibleHit@5": 0.6,
+  "EligibleP@10": 0.2,
+  "EligibleRecall@10": 0.005396415944361372,
+  "EligibleMRR": 0.5273504273504274,
+  "EligibleQrelCoverage": 0.968235557358551
+}
